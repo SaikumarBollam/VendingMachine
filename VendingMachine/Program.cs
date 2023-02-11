@@ -12,11 +12,12 @@ namespace VendingMachine
             Product product= new Product();
             Price price= new Price();
             Console.WriteLine("............VENDING MACHINE...............");
-            Console.WriteLine("............................................................");
+            Console.WriteLine("..........................................");
             product.SelectProduct();
+            product.DisplayProductPrice();
             do
             {
-                price.TakeCoins();
+                price.TakeCoins(); 
 
             } while (product.ProductPrice > price.CurrentAmt && ((Func<double, bool>)(y =>
             {
