@@ -11,7 +11,8 @@ namespace VendingMachine
         {
             Product product= new Product();
             Price price= new Price();
-
+            Console.WriteLine("............VENDING MACHINE...............");
+            Console.WriteLine("............................................................");
             product.SelectProduct();
             do
             {
